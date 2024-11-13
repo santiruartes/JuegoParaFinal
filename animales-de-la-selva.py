@@ -33,4 +33,5 @@ def juego_preguntas():
         print("Puedes mejorar. ¡Inténtalo de nuevo para aprender más!")
 
 # Iniciar el juego
-juego_preguntas()
+if __name__ == "__main__":
+    juego_preguntas()
