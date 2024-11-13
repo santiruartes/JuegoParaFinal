@@ -1,4 +1,5 @@
 from mastermind import game
+from animalesDeLaSelva import juego_preguntas
 
 var = 0
 
@@ -11,6 +12,7 @@ while var == 0:
           ¿Qué juego quieres jugar?
 
           1) Mastermind
+          2) Animales de la selva
          --------------------------- 
           """)
 
@@ -18,6 +20,8 @@ while var == 0:
 
     if juego == 1:
         game()
+    elif juego == 2:
+        juego_preguntas()
 
     sigue = input("¿Quiere seguir jugando? s (si) o n (no): ").lower()
     if sigue == 's':
