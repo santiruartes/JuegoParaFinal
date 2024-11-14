@@ -1,5 +1,6 @@
 from mastermind import game
 from animalesDeLaSelva import juego_preguntas
+from AdivinarElNumero import juego_adivina_numero
 
 var = 0
 
@@ -13,6 +14,7 @@ while var == 0:
 
           1) Mastermind
           2) Animales de la selva
+          3) Adivina el número
          --------------------------- 
           """)
 
@@ -22,6 +24,8 @@ while var == 0:
         game()
     elif juego == 2:
         juego_preguntas()
+    elif juego == 3:
+        juego_adivina_numero()
 
     sigue = input("¿Quiere seguir jugando? s (si) o n (no): ").lower()
     if sigue == 's':
@@ -29,6 +33,3 @@ while var == 0:
     elif sigue == 'n':
         var = 1  # Salir del bucle principal y terminar el programa
         break
-    else:
-        print("Opción no válida. Ingresa 's' para sí o 'n' para no.")
-        sigue = ''  # Reinicia sigue para pedir entrada nuevamente
