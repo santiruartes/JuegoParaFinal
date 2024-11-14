@@ -1,5 +1,6 @@
 import random
 
+
 def juego_adivina_numero():
     print("¡Hola! Bienvenido al Juego de Adivina el Número Mágico!")
     print("Estoy pensando en un número secreto entre 1 y 100.")
@@ -41,4 +42,6 @@ def juego_adivina_numero():
             print("¡Eres un mago!")
             break
 
-juego_adivina_numero()
+
+if __name__ == "__main__":
+    juego_adivina_numero()
