@@ -55,9 +55,7 @@ def juegoquiz():
 
         print(f"Tu puntaje final es: {puntaje}/{len(quiz)}")
 
+    # Ejecutamos la función del quiz
     ejecutar_quiz()
-
     if __name__ == "__main__":
         juegoquiz()
-
-# Ejecutamos la función del quiz
