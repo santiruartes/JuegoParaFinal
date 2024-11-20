@@ -2,6 +2,7 @@ from mastermind import game
 from animalesDeLaSelva import juego_preguntas
 from AdivinarElNumeroOficial import juego_adivina_numero
 from QUIZ import juegoquiz
+from guardianesDelPlaneta import gp
 
 var = 0
 
@@ -17,6 +18,7 @@ while var == 0:
           2) Animales de la selva
           3) Adivina el número
           4) Quiz
+          5) Guardianes del planeta
          --------------------------- 
           """)
 
@@ -30,6 +32,8 @@ while var == 0:
         juego_adivina_numero()
     elif juego == 4:
         juegoquiz()
+    elif juego == 5:
+        gp()
 
     sigue = input("¿Quiere seguir jugando? s (si) o n (no): ").lower()
     if sigue == 's':
