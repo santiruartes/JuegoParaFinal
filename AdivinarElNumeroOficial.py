@@ -1,6 +1,5 @@
 import random
 
-
 def juego_adivina_numero():
     print("¡Hola! Bienvenido al Juego de Adivina el Número Mágico!")
     print("Estoy pensando en un número secreto entre 1 y 100.")
@@ -16,32 +15,38 @@ def juego_adivina_numero():
 
     numero_secreto = random.randint(1, max_num)
     intentos = 0
+    
+    
 
     while True:
+
         numero_usuario = int(input("Adivine el número: "))
         intentos += 1
-
         diferencia = abs(numero_usuario - numero_secreto)
 
         if numero_usuario < numero_secreto:
             if diferencia <= 10:
-                print("¡Estás caliente!")
+                print("¡Estás muy cerca! El número secreto es un poco mayor.")
             elif diferencia <= 20:
-                print("¡Estás cerca!")
+                print("¡Estás cerca! El número secreto es algo mayor.")
             else:
-                print("¡Busca en otro lugar!")
+                print("¡Estás frío! El número secreto es mucho mayor.")
         elif numero_usuario > numero_secreto:
             if diferencia <= 10:
-                print("¡Estás caliente!")
+                print("¡Estás muy cerca! El número secreto es un poco menor.")
             elif diferencia <= 20:
-                print("¡Estás cerca!")
+                print("¡Estás cerca! El número secreto es algo menor.")
             else:
-                print("¡Busca en otro lugar!")
+                print("¡Estás frío! El número secreto es mucho menor.")
         else:
             print(f"Felicidades! Adivinaste el número en {intentos} intentos")
             print("¡Eres un mago!")
             break
 
+ 
+        
 
 if __name__ == "__main__":
     juego_adivina_numero()
+
+

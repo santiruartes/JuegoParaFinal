@@ -1,6 +1,6 @@
 from mastermind import game
 from animalesDeLaSelva import juego_preguntas
-from AdivinarElNumero import juego_adivina_numero
+from AdivinarElNumeroOficial import juego_adivina_numero
 from QUIZ import juegoquiz
 
 var = 0
