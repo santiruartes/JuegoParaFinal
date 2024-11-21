@@ -36,8 +36,7 @@ while var == 0:
         gp()
 
     sigue = input("¿Quiere seguir jugando? s (si) o n (no): ").lower()
-    if sigue == 's':
-        sigue = ''  # Permite repetir el ciclo de selección de juegos
-    elif sigue == 'n':
+    
+    if sigue == 'n':
         var = 1  # Salir del bucle principal y terminar el programa
         break
